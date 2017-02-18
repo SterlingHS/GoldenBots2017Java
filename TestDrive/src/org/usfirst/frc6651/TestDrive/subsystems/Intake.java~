@@ -49,6 +49,9 @@ public class Intake extends Subsystem {
     public void start() {
     	speedController1.set(.8);
     }
+    public void reverse() {
+    	speedController1.set(-.8);
+    }
     public void stop() {
     	speedController1.set(0);
     }
