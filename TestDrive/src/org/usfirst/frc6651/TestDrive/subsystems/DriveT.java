@@ -56,11 +56,16 @@ public class DriveT extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     
-    public void arcadeDrive(Joystick stick)
-    {
+    public void arcadeDrive(Joystick stick) {
     		robotDrive.arcadeDrive(stick);
     }
-    
+    public void autoDrive() {
+    	speedController0.set(.5);
+    	speedController1.set(.5);
+    	speedController2.set(.5);
+    	speedController3.set(.5);
+    }
+
     
 }
 

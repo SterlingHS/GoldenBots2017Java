@@ -46,5 +46,20 @@ public class Climber extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
+    public void startRaiseTable() {
+    	speedController1.set(.2);
+    }
+    public void startLowerTable() {
+    	speedController1.set(-.2);
+    }
+    public void stop() {
+    	speedController1.set(0);
+    }
+    public void startDropCable() {
+    	speedController1.set(-.8);
+    }
+    public void startCLimb() {
+    	speedController1.set(.8);
+    }
 }
 
