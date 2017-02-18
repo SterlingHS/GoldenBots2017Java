@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Golden Bots\workspace\TestDrive"/>
+		<item value="C:\Users\Golden Bots\workspace\DriveTrain"/>
+		<item value="C:\Users\Golden Bots\workspace\DraftGoldieproject"/>
+		<item value="C:\Users\Golden Bots\workspace\Draft Goldie project"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="edu.wpi.first.wpilib.plugins.cpp"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="619" key="DIALOG_X_ORIGIN"/>
+		<item value="274" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,23 @@
+11:21:34 **** Incremental Build of configuration Debug for project Draft Goldie project ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Golden Bots/wpilib/cpp/current/include" "-IC:\\Users\\Golden Bots\\workspace/Draft Goldie project/src" "-IC:\\Users\\Golden Bots/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Drivetrain.o" "..\\src\\Subsystems\\Drivetrain.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Golden Bots/wpilib/cpp/current/include" "-IC:\\Users\\Golden Bots\\workspace/Draft Goldie project/src" "-IC:\\Users\\Golden Bots/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\BallIntake.o" "..\\src\\Subsystems\\BallIntake.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Golden Bots/wpilib/cpp/current/include" "-IC:\\Users\\Golden Bots\\workspace/Draft Goldie project/src" "-IC:\\Users\\Golden Bots/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\BallOutput.o" "..\\src\\Subsystems\\BallOutput.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Golden Bots/wpilib/cpp/current/include" "-IC:\\Users\\Golden Bots\\workspace/Draft Goldie project/src" "-IC:\\Users\\Golden Bots/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Golden Bots/wpilib/cpp/current/include" "-IC:\\Users\\Golden Bots\\workspace/Draft Goldie project/src" "-IC:\\Users\\Golden Bots/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Golden Bots/wpilib/cpp/current/include" "-IC:\\Users\\Golden Bots\\workspace/Draft Goldie project/src" "-IC:\\Users\\Golden Bots/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Golden Bots/wpilib/cpp/current/include" "-IC:\\Users\\Golden Bots\\workspace/Draft Goldie project/src" "-IC:\\Users\\Golden Bots/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\RopeClimber.o" "..\\src\\Subsystems\\RopeClimber.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\Golden Bots/wpilib/cpp/current/include" "-IC:\\Users\\Golden Bots\\workspace/Draft Goldie project/src" "-IC:\\Users\\Golden Bots/wpilib/user/cpp/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\RobotMap.o" "..\\src\\RobotMap.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Golden Bots/wpilib/cpp/current/lib" "-LC:\\Users\\Golden Bots/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\BallIntake.o" "src\\Subsystems\\BallOutput.o" "src\\Subsystems\\Drivetrain.o" "src\\Subsystems\\RopeClimber.o" -lwpi 
+11:23:14 **** Incremental Build of configuration Debug for project Draft Goldie project ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Golden Bots/wpilib/cpp/current/lib" "-LC:\\Users\\Golden Bots/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\BallIntake.o" "src\\Subsystems\\BallOutput.o" "src\\Subsystems\\Drivetrain.o" "src\\Subsystems\\RopeClimber.o" -lwpi 
+Info: Nothing to build for Draft Goldie project
+11:23:15 **** Incremental Build of configuration Debug for project Getting Started ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Golden Bots/wpilib/cpp/current/lib" "-LC:\\Users\\Golden Bots/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Robot.o" -lwpi 
+11:24:40 **** Incremental Build of configuration Debug for project Draft Goldie project ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\Golden Bots/wpilib/cpp/current/lib" "-LC:\\Users\\Golden Bots/wpilib/user/cpp/lib" -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram "src\\Commands\\AutonomousCommand.o" "src\\OI.o" "src\\Robot.o" "src\\RobotMap.o" "src\\Subsystems\\BallIntake.o" "src\\Subsystems\\BallOutput.o" "src\\Subsystems\\Drivetrain.o" "src\\Subsystems\\RopeClimber.o" -lwpi 
+Info: Nothing to build for Draft Goldie project
+Info: Nothing to build for Getting Started
