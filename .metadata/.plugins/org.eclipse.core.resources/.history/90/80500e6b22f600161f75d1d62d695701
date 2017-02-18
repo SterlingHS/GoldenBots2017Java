@@ -61,8 +61,5 @@ public class Climber extends Subsystem {
     public void startClimb() {
     	speedController1.set(.8);
     }
-    public void holdClimb() {
-    	speedController1.set(.2);
-    }
 }
 
