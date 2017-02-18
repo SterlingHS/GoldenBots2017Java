@@ -8963,3 +8963,21 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2017-02-18 12:19:44.588
 !MESSAGE Updating projects
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-18 12:54:43.952
+!MESSAGE Running ant file: C:\Users\Golden Bots\workspace\TestDrive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-18 12:54:43.960
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-18 13:21:27.183
+!MESSAGE Running ant file: C:\Users\Golden Bots\workspace\TestDrive\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2017-02-18 13:21:27.192
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-02-18 13:21:27.287
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-02-18 13:21:27.296
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
