@@ -13,6 +13,8 @@ package org.usfirst.frc6651.TestDrive.subsystems;
 
 import org.usfirst.frc6651.TestDrive.RobotMap;
 import org.usfirst.frc6651.TestDrive.commands.*;
+
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.SpeedController;
 
@@ -49,22 +51,28 @@ public class Climber extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     public void startRaiseTable() {
-    	speedController1.set(.2);
+    	speedController6.set(.2);
     }
     public void startLowerTable() {
-    	speedController1.set(-.2);
+    	speedController6.set(-.2);
     }
     public void stop() {
-    	speedController1.set(0);
+    	speedController6.set(0);
     }
     public void startDropCable() {
-    	speedController1.set(-.8);
+    	speedController6.set(-.8);
     }
     public void startClimb() {
-    	speedController1.set(.8);
+    	speedController6.set(.8);
     }
     public void holdClimb() {
-    	speedController1.set(.2);
+    	speedController6.set(.2);
+    }
+    public boolean detectFloorUp() {
+    	return floorUp.get();
+    }
+    public boolean detectFloorDown() {
+    	return floorDown.get();
     }
 }
 

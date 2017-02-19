@@ -47,13 +47,13 @@ public class Intake extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     public void start() {
-    	speedController4.set(.8);
+    	speedController1.set(.8);
     }
     public void reverse() {
-    	speedController4.set(-.8);
+    	speedController1.set(-.8);
     }
     public void stop() {
-    	speedController4.set(0);
+    	speedController1.set(0);
     }
 }
 
