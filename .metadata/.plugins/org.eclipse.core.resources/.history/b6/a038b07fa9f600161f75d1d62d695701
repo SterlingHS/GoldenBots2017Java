@@ -38,10 +38,7 @@ public class RaiseTable extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	if(!Robot.climber.detectFloorDown()) 
-    		Robot.climber.startRaiseTable();
-	else 
-			Robot.climber.stop();
+    	Robot.climber.startRaiseTable();
     }
 
     // Called repeatedly when this Command is scheduled to run
