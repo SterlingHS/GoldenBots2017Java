@@ -14,6 +14,8 @@ package org.usfirst.frc6651.TestDrive;
 import org.usfirst.frc6651.TestDrive.commands.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
+
 import org.usfirst.frc6651.TestDrive.subsystems.*;
 
 
