@@ -64,13 +64,13 @@ public class Robot extends IterativeRobot {
         // instantiate the command used for the autonomous period
         
         AutonomousModes = new SendableChooser();
-        AutonomousModes.addDefault("Pick Up Balls", new CaptureBalls());
-        AutonomousModes.addObject("Empty Intake", new ClearJam());
-        AutonomousModes.addObject("Raise Floor", new RaiseTable());
-        AutonomousModes.addObject("Drop Floor", new LowerTable());
-        AutonomousModes.addObject("Drop Cable", new DropCable());
-        AutonomousModes.addObject("Climb Rope", new ClimbRope());
-        AutonomousModes.addObject("AUTONOMOUS", new AutonomousCommand());
+        AutonomousModes.addDefault("Pick Up Balls", object);
+        AutonomousModes.addObject("Empty Intake", object);
+        AutonomousModes.addObject("Raise Floor", object);
+        AutonomousModes.addObject("Drop Floor", object);
+        AutonomousModes.addObject("Drop Cable", object);
+        AutonomousModes.addObject("Climb Rope", object);
+        
     }
 
     /**
