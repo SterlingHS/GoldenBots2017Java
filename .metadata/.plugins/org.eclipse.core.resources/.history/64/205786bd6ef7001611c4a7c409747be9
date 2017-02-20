@@ -16,7 +16,6 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc6651.TestDrive.commands.*;
 import org.usfirst.frc6651.TestDrive.subsystems.*;
@@ -65,15 +64,13 @@ public class Robot extends IterativeRobot {
         // instantiate the command used for the autonomous period
         
         AutonomousModes = new SendableChooser();
-        AutonomousModes.addDefault("AUTONOMOUS", new AutonomousCommand());
-        AutonomousModes.addObject("Pick Up Balls", new CaptureBalls());
+        AutonomousModes.addDefault("Pick Up Balls", new CaptureBalls());
         AutonomousModes.addObject("Empty Intake", new ClearJam());
         AutonomousModes.addObject("Raise Floor", new RaiseTable());
         AutonomousModes.addObject("Drop Floor", new LowerTable());
         AutonomousModes.addObject("Drop Cable", new DropCable());
         AutonomousModes.addObject("Climb Rope", new ClimbRope());
-        
-        SmartDashboard.putData("Autonomous Mode", AutonomousModes);
+        AutonomousModes.addObject("AUTONOMOUS", new AutonomousCommand());
     }
 
     /**
@@ -90,7 +87,6 @@ public class Robot extends IterativeRobot {
 
     public void autonomousInit() {
         // schedule the autonomous command (example)
-    	AutonomousCommand = (Command) AutonomousModes.getSelected();
         if (autonomousCommand != null) autonomousCommand.start();
     }
 
