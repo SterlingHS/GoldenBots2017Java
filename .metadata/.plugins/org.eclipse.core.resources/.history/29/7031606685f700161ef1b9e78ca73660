@@ -70,32 +70,7 @@ public class OI {
 
         xbox = new Joystick(1);
         
-        // Intake System
-        a = new JoystickButton(xbox, 1);
-        a.whileHeld(new CaptureBalls());
-        
-        b = new JoystickButton(xbox, 2);
-        b.whenPressed(new ClearJam());
-        
-        //Output system
-        rB = new JoystickButton(xbox, 6);
-        rB.whileHeld(new ThrowOutBalls());
-        
-        // Table system
-        x = new JoystickButton(xbox, 3);
-        x.whenPressed(new LowerTable());
-        
         y = new JoystickButton(xbox, 4);
-        y.whileHeld(new RaiseTable());
-        
-        // Climbing system
-        lB = new JoystickButton(xbox, 5);
-        lB.whileHeld(new ClimbRope());
-        
-        back = new JoystickButton(xbox, 7);
-        back.whileHeld(new ClearJam());
-        
-/*      y = new JoystickButton(xbox, 4);
         y.whileHeld(new ThrowOutBalls());
         x = new JoystickButton(xbox, 3);
         x.whileHeld(new CaptureBalls());
@@ -108,10 +83,8 @@ public class OI {
         b = new JoystickButton(xbox, 2);
         b.whenPressed(new LowerTable());
         a = new JoystickButton(xbox, 1);
-        a.whileHeld(new RaiseTable());*/
-        
-        
-        joystickDrive = new Joystick(0); 
+        a.whileHeld(new RaiseTable());
+        joystickDrive = new Joystick(0);
         
 
 
