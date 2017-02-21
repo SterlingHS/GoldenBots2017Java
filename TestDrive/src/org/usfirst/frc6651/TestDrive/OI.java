@@ -92,17 +92,19 @@ public class OI {
         
         // Table system
         x = new JoystickButton(xbox, 3);
-        x.whenPressed(new LowerTable());
+        x.whileHeld(new LowerTable());
         
         y = new JoystickButton(xbox, 4);
         y.whileHeld(new RaiseTable());
+        
         
         // Climbing system
         lB = new JoystickButton(xbox, 5);
         lB.whileHeld(new ClimbRope());
         
         back = new JoystickButton(xbox, 7);
-        back.whileHeld(new ClearJam());
+        back.whileHeld(new DropCable());
+
         
         // SmartDashboard Buttons
         SmartDashboard.putData("ThrowOutBalls", new ThrowOutBalls());

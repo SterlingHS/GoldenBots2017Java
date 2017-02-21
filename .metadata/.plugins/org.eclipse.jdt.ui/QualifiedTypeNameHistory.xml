@@ -5,14 +5,14 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DigitalInput"/>
 <fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.Robot"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SendableChooser"/>
 <fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.CaptureBalls"/>
 <fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.ClearJam"/>
 <fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.RaiseTable"/>
 <fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.LowerTable"/>
-<fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.DropCable"/>
 <fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.ClimbRope"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 <fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.AutonomousCommand"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.Command"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SendableChooser"/>
+<fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.DropCable"/>
 </qualifiedTypeNameHistroy>
