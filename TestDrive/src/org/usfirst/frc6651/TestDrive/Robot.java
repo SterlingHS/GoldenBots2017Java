@@ -11,6 +11,7 @@
 
 package org.usfirst.frc6651.TestDrive;
 
+import edu.wpi.cscore.CvSink;
 import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
@@ -44,6 +45,7 @@ public class Robot extends IterativeRobot {
     
     SendableChooser AutonomousModes;
     SendableChooser TeleOpMode;
+    CvSink cvSink;
     
     /**
      * This function is run when the robot is first started up and should be
@@ -67,7 +69,7 @@ public class Robot extends IterativeRobot {
         // instantiate the command used for the autonomous period
         
         AutonomousModes = new SendableChooser();
-        AutonomousModes.addDefault("AUTONOMOUS", new AutonomousCommand());
+        AutonomousModes.addDefault("AUTONOMOUS", new MoveForward());
         AutonomousModes.addObject("Pick Up Balls", new CaptureBalls());
         AutonomousModes.addObject("Empty Intake", new ClearJam());
         AutonomousModes.addObject("Raise Floor", new RaiseTable());
@@ -77,7 +79,9 @@ public class Robot extends IterativeRobot {
         
         SmartDashboard.putData("Autonomous Mode", AutonomousModes);
         
-        CameraServer.getInstance().startAutomaticCapture();
+       CameraServer.getInstance().startAutomaticCapture();
+       // Creates the CvSink and connects it to the UsbCamera CvSink 
+       //cvSink = CameraServer.getInstance().getVideo();
     }
 
     /**
@@ -94,8 +98,11 @@ public class Robot extends IterativeRobot {
 
     public void autonomousInit() {
         // schedule the autonomous command (example)
-    	autonomousCommand = (Command) AutonomousModes.getSelected();
-        if (autonomousCommand != null) autonomousCommand.start();
+    	//autonomousCommand = (Command) AutonomousModes.getSelected();
+        //if (autonomousCommand != null) autonomousCommand.start();
+    	
+    	MoveForward moveForward = new MoveForward();
+    	moveForward.start();
     }
 
     /**
@@ -103,6 +110,7 @@ public class Robot extends IterativeRobot {
      */
     public void autonomousPeriodic() {
         Scheduler.getInstance().run();
+        Scheduler.getInstance();
     }
 
     public void teleopInit() {

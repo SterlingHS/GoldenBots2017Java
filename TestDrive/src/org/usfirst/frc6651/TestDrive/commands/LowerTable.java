@@ -37,10 +37,10 @@ public class LowerTable extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	if(Robot.climber.detectFloorDown() == false) 
-    			Robot.climber.startLowerTable();
-    	else 
-    			Robot.climber.stop();
+//    	if(Robot.climber.detectFloorDown() == false) 
+//    			Robot.climber.startLowerTable();
+//    	else 
+//    			Robot.climber.stop();
     }
 
     // Called repeatedly when this Command is scheduled to run

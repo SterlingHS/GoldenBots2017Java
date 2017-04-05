@@ -48,7 +48,7 @@ public class Output extends Subsystem {
     }
     
     public void start() {
-    	speedController5.set(.8);
+    	speedController5.set(1);
     }
     public void stop() {
     	speedController5.set(0);

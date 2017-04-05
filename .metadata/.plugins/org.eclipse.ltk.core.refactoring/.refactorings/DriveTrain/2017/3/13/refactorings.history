@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.usfirst.frc6651.DriveTrain.commands.AutonomousCommand&apos; to &apos;MoveForward&apos;&#x0D;&#x0A;- Original project: &apos;DriveTrain&apos;&#x0D;&#x0A;- Original element: &apos;org.usfirst.frc6651.DriveTrain.commands.AutonomousCommand&apos;&#x0D;&#x0A;- Renamed element: &apos;org.usfirst.frc6651.DriveTrain.commands.MoveForward&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AutonomousCommand&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.usfirst.frc6651.DriveTrain.commands{AutonomousCommand.java[AutonomousCommand" matchStrategy="1" name="MoveForward" qualified="false" references="true" similarDeclarations="false" stamp="1490903106694" textual="false" version="1.0"/>
+</session>

@@ -15,4 +15,6 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.Command"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SendableChooser"/>
 <fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.DropCable"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Timer"/>
+<fullyQualifiedTypeName name="org.usfirst.frc6651.TestDrive.commands.MoveForward"/>
 </qualifiedTypeNameHistroy>

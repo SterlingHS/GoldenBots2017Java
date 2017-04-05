@@ -57,13 +57,30 @@ public class DriveT extends Subsystem {
     }
     
     public void arcadeDrive(Joystick stick) {
-    		robotDrive.arcadeDrive(stick);
+    	
+    	if(stick.getRawButton(3))
+    	{
+    		System.out.println("X: " + stick.getX() + " Y: " + stick.getY() + " Y Scaled: " + stick.getY() * .3);
+    		robotDrive.arcadeDrive(stick.getY() * 0.5, stick.getX(), false);
+    		System.out.println("Left: " + RobotMap.driveTSpeedController0.get() + " Right: " + RobotMap.driveTSpeedController2.get());
+    	}
+    	else
+    	{
+    		System.out.println("X: " + stick.getX() + " Y: " + stick.getY());
+    		robotDrive.arcadeDrive(stick.getY(), stick.getX());
+    		System.out.println("Left: " + RobotMap.driveTSpeedController0.get() + " Right: " + RobotMap.driveTSpeedController2.get());
+    		
+    	}
+    		
     }
-    public void autoDrive() {
-    	speedController0.set(.5);
-    	speedController1.set(.5);
-    	speedController2.set(.5);
-    	speedController3.set(.5);
+    
+    
+    
+    public void autoDrive(double left, double right) {
+    	speedController0.set(left);
+    	speedController1.set(left);
+    	speedController2.set(right);
+    	speedController3.set(right);
     }
 
     

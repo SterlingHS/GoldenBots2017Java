@@ -77,38 +77,35 @@ public class OI {
     	a = new JoystickButton(xbox, 1);
         a.whileHeld(new CaptureBalls());
         
-        trigger = new JoystickButton(joystickDrive, 1);
-        trigger.whileHeld(new CaptureBalls());
-        
         b = new JoystickButton(xbox, 2);
         b.whileHeld(new ClearJam());
-        
-        thumb = new JoystickButton(joystickDrive, 2);
-        thumb.whileHeld(new ClearJam());
         
         //Output system
         rB = new JoystickButton(xbox, 6);
         rB.whileHeld(new ThrowOutBalls());
         
         // Table system
-        x = new JoystickButton(xbox, 3);
-        x.whileHeld(new LowerTable());
+//        x = new JoystickButton(xbox, 3);
+//        x.whileHeld(new LowerTable());
         
-        y = new JoystickButton(xbox, 4);
-        y.whileHeld(new RaiseTable());
+//        y = new JoystickButton(xbox, 4);
+//        y.whileHeld(new RaiseTable());
         
         
         // Climbing system
-        lB = new JoystickButton(xbox, 5);
-        lB.whileHeld(new ClimbRope());
+        x = new JoystickButton(xbox, 3);
+        x.whileHeld(new ClimbRope());
         
-        back = new JoystickButton(xbox, 7);
-        back.whileHeld(new DropCable());
+        y = new JoystickButton(xbox, 4);
+        y.whileHeld(new DropCable());
+        
+        trigger = new JoystickButton(joystickDrive, 1);
+        trigger.whileHeld(new ClimbRope());
 
         
         // SmartDashboard Buttons
         SmartDashboard.putData("ThrowOutBalls", new ThrowOutBalls());
-        SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
+        SmartDashboard.putData("Autonomous Command", new MoveForward());
         SmartDashboard.putData("ArcadeDrive", new ArcadeDrive());
         SmartDashboard.putData("CaptureBalls", new CaptureBalls());
         SmartDashboard.putData("ClimbRope", new ClimbRope());

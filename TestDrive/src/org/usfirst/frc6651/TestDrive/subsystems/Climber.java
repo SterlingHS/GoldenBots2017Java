@@ -66,7 +66,7 @@ public class Climber extends Subsystem {
     	speedController6.set(.8);
     }
     public void holdClimb() {
-    	speedController6.set(.2);
+    	speedController6.set(0);
     }
     public boolean detectFloorUp() {
     	return floorUp.get();
