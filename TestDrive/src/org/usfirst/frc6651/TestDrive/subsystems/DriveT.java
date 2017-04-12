@@ -79,8 +79,8 @@ public class DriveT extends Subsystem {
     public void autoDrive(double left, double right) {
     	speedController0.set(left);
     	speedController1.set(left);
-    	speedController2.set(right);
-    	speedController3.set(right);
+    	speedController2.set(right * (-1));
+    	speedController3.set(right * (-1));
     }
 
     
