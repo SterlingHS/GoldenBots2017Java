@@ -82,6 +82,29 @@ public class DriveT extends Subsystem {
     	speedController2.set(right * (-1));
     	speedController3.set(right * (-1));
     }
+	
+	public void autonomousDrive() {
+		// move forward for 1 second
+		this.autoDrive(.5,.5)
+		Thread.sleep(1000);
+		// reverse for half second
+		this.autoDrive(-.5,-.5)
+		Thread.sleep(500);
+		// reverse left for .25 second
+		this.autoDrive(-.3,.3)
+		Thread.sleep(250);
+		// reverse for .25 second
+		this.autoDrive(-.5,-.5)
+		Thread.sleep(250);
+		// stop
+		this.autoDrive(0,0)
+		// throw out balls for 2 seconds
+    	Robot.output.start();
+		Thread.sleep(2000);
+		// stop
+    	Robot.output.stop();
+	}
+
 
     
 }
