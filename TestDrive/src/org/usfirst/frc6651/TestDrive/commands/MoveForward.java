@@ -42,21 +42,22 @@ public class MoveForward extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	timer.start();
+		Robot.driveT.autonomousDrive();
+//    	timer.start();
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveT.autoDrive(0.5, -	0.5);
+//    	Robot.driveT.autoDrive(0.5, 0.5);
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        
-    	if(timer.get() >= 2)
-    		return true;
-    	else
-    		return false;
+//        
+//    	if(timer.get() >= 2)
+//    		return true;
+//    	else
+//    		return false;
     }
 
     // Called once after isFinished returns true
